@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="FlightSimulator.Views.ChangeCommands"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FlightSimulator.Views"
+             mc:Ignorable="d" d:DesignWidth="500" Height="470">
+    <Grid>
+        <!--local:Manual x:Name="Manual" Grid.Column="2" Grid.Row="1" Margin="10"-->
+        <TabControl HorizontalAlignment="Left" Height="485" VerticalAlignment="Top" Width="520" Margin="0,0,-20,-15">
+            <TabItem Header="Manual">
+                <local:Manual x:Name="Manual" Grid.Column="2" Grid.Row="1" Margin="10"/>
+            </TabItem>
+            <TabItem Header="Auto Pilot">
+                <local:AutoPilot x:Name="AutoPilot" Grid.Column="2" Grid.Row="1" Margin="10"/>
+            </TabItem>
+        </TabControl>
+
+        <TabControl Grid.Column="3" HorizontalAlignment="Left" Height="320" Margin="4.333,76,0,0" VerticalAlignment="Top" Width="410">
+            <TabItem Header="Manual">
+                <!--local:Manual x:Name="Manual" Grid.Column="2" Grid.Row="1" Margin="10,10,-4,10"-->
+            </TabItem>
+            <TabItem Header="Auto Pilot">
+                <!--local:AutoPilot x:Name="AutoPilot" Grid.Column="2" Grid.Row="1" Margin="10,10,-52,-133"-->
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</UserControl>
